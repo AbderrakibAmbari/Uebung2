@@ -1,8 +1,14 @@
 package mvc;
 
+import javafx.stage.Stage;
+
 public class AnwendersystemControl  {
 	private AnwendersystemModel anwModel;
 	private AnwendersystemView anwView;
-	anwView =new AnwendersystemView(this.AnwendersystemControl,primaryStage,anwModel);
+	
+	public AnwendersystemControl(Stage primaryStage) {
+		this.anwModel=new AnwendersystemModel();
+		this.anwView=new AnwendersystemView(this,primaryStage,anwModel);
+	}
 	
 }

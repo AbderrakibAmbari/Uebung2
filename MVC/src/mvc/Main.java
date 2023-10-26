@@ -15,13 +15,15 @@ public class Main extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
-		AnwendersystemControl anwControl =new AnwendersystemControl();
-		AnwendersystemView anwView =new AnwendersystemView(anwControl, primaryStage, null);
+		new AnwendersystemControl(primaryStage);
 		
 		
-		primaryStage.setTitle("Anwendersystem");
+		
+		/*primaryStage.setTitle("Anwendersystem");
 		primaryStage.setScene(anwView.getScene());
 		primaryStage.show();
+		
+		*/
 	}
 
 }
